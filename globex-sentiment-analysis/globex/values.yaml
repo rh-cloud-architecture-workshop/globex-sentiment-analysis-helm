@@ -15,3 +15,5 @@ kafdrop:
     clientId: globex
     clientSecret: globex
     namespace: ""
+kafka:
+  enabled: true
