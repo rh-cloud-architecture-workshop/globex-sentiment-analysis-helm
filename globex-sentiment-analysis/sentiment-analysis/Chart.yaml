@@ -11,11 +11,10 @@ dependencies:
   - name: kafka-secret
     version: 0.1.0
     repository: file://kafka-secret
-  - name: knative-kafka
+  - name: knative-kafkasink
     version: 0.1.0
     repository: file://knative-kafka
-  - name: reviews-db
-  - name: knative-kafkasink
+  - name: knative-kafka
     version: 0.1.0
     repository: file://knative-kafkasink
   - name: reviews-db
