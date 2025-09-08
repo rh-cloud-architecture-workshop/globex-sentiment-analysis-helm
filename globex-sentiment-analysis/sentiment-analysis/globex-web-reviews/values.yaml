@@ -3,9 +3,9 @@ nameOverride: globex-web
 replicaCount: 1
 
 image:
-  repository: quay.io/globex-sentiment-analysis/globex-web-reviews
+  repository: quay.io/cloud-architecture-workshop/globex-web-reviews
   pullPolicy: IfNotPresent
-  tag: latest
+  tag: 0c3d4b5
 
 serviceAccount:
   create: true
