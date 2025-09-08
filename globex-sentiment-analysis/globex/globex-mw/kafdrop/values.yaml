@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: quay.io/cloud-architecture-workshop/obsidiandynamics-kafdrop
+  repository: obsidiandynamics/kafdrop
   pullPolicy: IfNotPresent
   tag: "latest"
 
@@ -73,6 +73,3 @@ kafka:
   clientId: ""
   clientSecret: ""
   namespace: ""
-
-schemaRegistry:
-  url: ""

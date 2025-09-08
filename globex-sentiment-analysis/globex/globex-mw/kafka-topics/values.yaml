@@ -2,7 +2,7 @@
 
 kafka:
   cluster: kafka
-  replicationFactor: 3
+  replicationFactor: 2
   topics:
     - name: globex.tracking
       partitions: 1

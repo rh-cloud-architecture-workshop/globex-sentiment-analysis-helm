@@ -35,8 +35,3 @@ dependencies:
   - name: kafdrop
     version: 0.1.0
     repository: file://globex-mw/kafdrop
-    condition: kafka.enabled
-  - name: streams-console
-    version: 0.1.0
-    repository: file://globex-mw/streams-console
-    condition: kafka.enabled

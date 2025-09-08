@@ -2,12 +2,10 @@ nameOverride: "kafka"
 
 kafka:
   enabled: true
-  version: 3.9.0
-  metadataVersion: 3.9-IV0
-  broker:
-    replicas: 3
-  controller:
-    enabled: true
+  version: 3.3.1
+  cluster:
+    replicas: 2
+  zookeeper:
     replicas: 3
     resources:
       limits:
@@ -18,11 +16,12 @@ kafka:
         memory: 200M
   config:
     autoCreateTopics: false
-    defaultReplicationFactor: 3
-    offsetsTopicReplicationFactor: 3
-    transactionStateLogReplicationFactor: 3
+    defaultReplicationFactor: 2
+    offsetsTopicReplicationFactor: 2
+    transactionStateLogReplicationFactor: 2
     transactionStateLogMinIsr: 2
-    minInsyncReplicas: 2
+    minInsyncReplicas: 1
+    interBrokerProtocolVersion: '3.3'
   entityOperator:
     topicOperator:
       resources:
@@ -53,10 +52,10 @@ bootstrapServer:
 namespace:
 
 authentication:
-  clientId: globex
-  clientSecret: globex
-  securityProtocol: SASL_PLAINTEXT
-  saslMechanism: SCRAM-SHA-512
+  clientId: ""
+  clientSecret: ""
+  securityProtocol: ""
+  saslMechanism: ""
 
 authorization: simple
 
